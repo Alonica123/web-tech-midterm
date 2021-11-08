@@ -29,3 +29,5 @@ Route::get('/home', [
 
 
 Route::resource('boholInfos', App\Http\Controllers\BoholInfoController::class);
+
+Route::resource('logs', App\Http\Controllers\LogsController::class);

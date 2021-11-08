@@ -20,4 +20,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('bohol-info',[BoholInfoControllerAPI::class,'index']);
+Route::post('login',[BoholInfoControllerAPI::class,'login']);
+Route::post('register',[BoholInfoControllerAPI::class,'register']);
+Route::post('reset-password',[BoholInfoControllerAPI::class,'reset-password']);
